@@ -6,7 +6,7 @@ A modern, responsive, and interactive Contact Manager built using HTML, CSS, and
 
 ## 🌐 Live Demo
 
-👉 https://kumarsubodh12.github.io/contact-manager/
+👉 https://PawanSB-byte.github.io/contact-manager/
 
 ---
 
@@ -53,7 +53,7 @@ contact-manager/
 1. Clone the repository:
 
 ```id="t9k4wa"
-git clone https://github.com/kumarsubodh12/contact-manager.git
+git clone https://github.com/PawanSB-byte/contact-manager.git
 ```
 
 2. Open the folder
@@ -78,7 +78,7 @@ index.html
 
 ## 👨‍💻 Author
 
-**Subodh Kumar**
+**Pawan**
 
 ---
 
