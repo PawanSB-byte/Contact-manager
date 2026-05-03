@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1>📱 Contact Manager</h1>
+
+  <div class="input-box">
+    <input type="text" id="name" placeholder="👤 Name">
+    <input type="text" id="phone" placeholder="📞 Phone">
+    <button onclick="addContact()" id="addBtn">➕ Add</button>
+  </div>
+
+  <input type="text" id="search" placeholder="🔍 Search..." onkeyup="searchContact()">
+
+  <div id="list"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

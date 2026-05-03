@@ -1,0 +1,86 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #87CEEB, #ffffff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* GLASS CONTAINER */
+.container {
+  width: 400px;
+  padding: 20px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background: rgba(255,255,255,0.2);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+/* INPUT */
+.input-box input {
+  width: 45%;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+}
+
+#search {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+}
+
+/* BUTTON */
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #00bfff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* CLICK EFFECT */
+button:active {
+  transform: scale(0.9);
+  background: white;
+  color: #00bfff;
+}
+
+/* CONTACT CARD */
+.contact {
+  background: rgba(255,255,255,0.3);
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.contact:hover {
+  transform: translateY(-5px);
+}
+
+/* DELETE BTN */
+.delete {
+  background: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card form-card">
+    <h2>{{ 'Edit Contact' if contact else 'Add Contact' }}</h2>
+    <form method="POST">
+        <input type="text" name="name" placeholder="Full Name" value="{{ contact.name if contact else '' }}">
+        <input type="text" name="phone" placeholder="Phone Number" value="{{ contact.phone if contact else '' }}">
+        <input type="email" name="email" placeholder="Email Address" value="{{ contact.email if contact else '' }}">
+        <button type="submit">Save</button>
+    </form>
+</div>
+{% endblock %}

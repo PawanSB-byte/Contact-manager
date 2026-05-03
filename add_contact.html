@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card form-card">
+    <h2>Add New Contact</h2>
+    <form method="POST">
+        <label>Full Name</label>
+        <input type="text" name="name" placeholder="Enter full name" required>
+        <label>Phone Number</label>
+        <input type="text" name="phone" placeholder="Enter phone number" required>
+        <label>Email Address</label>
+        <input type="email" name="email" placeholder="Enter email address" required>
+        <button type="submit">➕ Add Contact</button>
+    </form>
+</div>
+{% endblock %}

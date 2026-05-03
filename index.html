@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="card">
+    <h2>All Contacts</h2>
+    <form method="GET" class="search-box">
+        <input type="text" name="search" placeholder="Search by name or phone">
+        <button>Search</button>
+    </form>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+        {% for c in contacts %}
+        <tr>
+            <td>{{ c.name }}</td>
+            <td>{{ c.phone }}</td>
+            <td>{{ c.email }}</td>
+            <td>
+                <a href="/edit/{{ c.id }}" class="edit">Edit</a>
+                <a href="/delete/{{ c.id }}" class="delete">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}
